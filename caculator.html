@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>caculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='caculator.css'>
+    <script src='caculator.js'></script>
+    
+</head> 
+	
+<body> 
+	<table id="mayTinh"> 
+		<tr> 
+			<td colspan="3"><input type="text" id="ketQua"></td> 
+			<td><input type="button" value="C" onclick="xoa()" /> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="1" onclick="hienThi('1')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="2" onclick="hienThi('2')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="3" onclick="hienThi('3')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="/" onclick="hienThi('/')"
+						onkeydown="xuLySuKien(event)"> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="hienThi('4')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="5" onclick="hienThi('5')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="6" onclick="hienThi('6')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="*" onclick="hienThi('*')"
+						onkeydown="xuLySuKien(event)"> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7" onclick="hienThi('7')"
+						onkeydown="xuLySuKienPhim(event)"> </td> 
+			<td><input type="button" value="8" onclick="hienThi('8')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="9" onclick="hienThi('9')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="-" onclick="hienThi('-')"
+						onkeydown="xuLySuKien(event)"> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="0" onclick="hienThi('0')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			<td><input type="button" value="." onclick="hienThi('.')"
+						onkeydown="xuLySuKien(event)"> </td> 
+			
+			<!-- gọi hàm solve để tính toán giá trị -->
+			<td><input type="button" value="=" onclick="tinh()"> </td> 
+
+			<td><input type="button" value="+" onclick="hienThi('+')"
+						onkeydown="xuLySuKien(event)"> </td> 
+		</tr> 
+	</table>
+</body> 
+
+</html> 
